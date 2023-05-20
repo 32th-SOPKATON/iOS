@@ -24,9 +24,10 @@
 		913197412A189F9000D423D7 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197402A189F9000D423D7 /* NetworkResult.swift */; };
 		913197432A189F9D00D423D7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197422A189F9D00D423D7 /* NetworkService.swift */; };
 		913197452A189FA900D423D7 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197442A189FA900D423D7 /* URLConstants.swift */; };
-		913197482A189FDD00D423D7 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197472A189FDD00D423D7 /* dummy.swift */; };
-		9131974B2A189FEE00D423D7 /* dummyRe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131974A2A189FEE00D423D7 /* dummyRe.swift */; };
 		9131974E2A1901C600D423D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9131974D2A1901C600D423D7 /* Alamofire */; };
+		913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131974F2A1906D000D423D7 /* ServiceAPI.swift */; };
+		913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197512A1906F000D423D7 /* ServiceProtocol.swift */; };
+		913197542A19129B00D423D7 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197532A19129B00D423D7 /* ResponseData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +49,9 @@
 		913197402A189F9000D423D7 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		913197422A189F9D00D423D7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		913197442A189FA900D423D7 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
-		913197472A189FDD00D423D7 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
-		9131974A2A189FEE00D423D7 /* dummyRe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummyRe.swift; sourceTree = "<group>"; };
+		9131974F2A1906D000D423D7 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		913197512A1906F000D423D7 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		913197532A19129B00D423D7 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				913197372A189F4100D423D7 /* NetworkCommon */,
-				913197492A189FE400D423D7 /* Repository */,
 				913197462A189FC700D423D7 /* API */,
 				913197342A189F3200D423D7 /* DTO */,
 			);
@@ -214,17 +215,11 @@
 		913197462A189FC700D423D7 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				913197472A189FDD00D423D7 /* dummy.swift */,
+				9131974F2A1906D000D423D7 /* ServiceAPI.swift */,
+				913197512A1906F000D423D7 /* ServiceProtocol.swift */,
+				913197532A19129B00D423D7 /* ResponseData.swift */,
 			);
 			path = API;
-			sourceTree = "<group>";
-		};
-		913197492A189FE400D423D7 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				9131974A2A189FEE00D423D7 /* dummyRe.swift */,
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,17 +301,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */,
-				913197482A189FDD00D423D7 /* dummy.swift in Sources */,
 				9131972B2A189E0900D423D7 /* UIColor.swift in Sources */,
 				9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */,
+				913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */,
 				913197452A189FA900D423D7 /* URLConstants.swift in Sources */,
 				913197412A189F9000D423D7 /* NetworkResult.swift in Sources */,
+				913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */,
 				913197272A189DED00D423D7 /* UIView+Extension.swift in Sources */,
+				913197542A19129B00D423D7 /* ResponseData.swift in Sources */,
 				9131973A2A189F5E00D423D7 /* MoyaLoggerPlugin.swift in Sources */,
 				9131973D2A189F7300D423D7 /* BaseTargetType.swift in Sources */,
 				913197362A189F3B00D423D7 /* dummyDTO.swift in Sources */,
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
-				9131974B2A189FEE00D423D7 /* dummyRe.swift in Sources */,
 				913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
