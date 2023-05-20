@@ -18,8 +18,6 @@
 		9131972B2A189E0900D423D7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131972A2A189E0900D423D7 /* UIColor.swift */; };
 		9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131972D2A189E1E00D423D7 /* ImageLiterals.swift */; };
 		913197362A189F3B00D423D7 /* dummyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197352A189F3B00D423D7 /* dummyDTO.swift */; };
-		9131973A2A189F5E00D423D7 /* MoyaLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197392A189F5E00D423D7 /* MoyaLoggerPlugin.swift */; };
-		9131973D2A189F7300D423D7 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131973C2A189F7300D423D7 /* BaseTargetType.swift */; };
 		9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131973E2A189F8100D423D7 /* BaseURLConstant.swift */; };
 		913197412A189F9000D423D7 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197402A189F9000D423D7 /* NetworkResult.swift */; };
 		913197432A189F9D00D423D7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197422A189F9D00D423D7 /* NetworkService.swift */; };
@@ -43,8 +41,6 @@
 		9131972A2A189E0900D423D7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		9131972D2A189E1E00D423D7 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
 		913197352A189F3B00D423D7 /* dummyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummyDTO.swift; sourceTree = "<group>"; };
-		913197392A189F5E00D423D7 /* MoyaLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggerPlugin.swift; sourceTree = "<group>"; };
-		9131973C2A189F7300D423D7 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
 		9131973E2A189F8100D423D7 /* BaseURLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLConstant.swift; sourceTree = "<group>"; };
 		913197402A189F9000D423D7 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		913197422A189F9D00D423D7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -187,23 +183,13 @@
 			isa = PBXGroup;
 			children = (
 				9131973B2A189F6600D423D7 /* Foundation */,
-				913197382A189F5400D423D7 /* MoyaPluggin */,
 			);
 			path = NetworkCommon;
-			sourceTree = "<group>";
-		};
-		913197382A189F5400D423D7 /* MoyaPluggin */ = {
-			isa = PBXGroup;
-			children = (
-				913197392A189F5E00D423D7 /* MoyaLoggerPlugin.swift */,
-			);
-			path = MoyaPluggin;
 			sourceTree = "<group>";
 		};
 		9131973B2A189F6600D423D7 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				9131973C2A189F7300D423D7 /* BaseTargetType.swift */,
 				9131973E2A189F8100D423D7 /* BaseURLConstant.swift */,
 				913197402A189F9000D423D7 /* NetworkResult.swift */,
 				913197422A189F9D00D423D7 /* NetworkService.swift */,
@@ -309,8 +295,6 @@
 				913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */,
 				913197272A189DED00D423D7 /* UIView+Extension.swift in Sources */,
 				913197542A19129B00D423D7 /* ResponseData.swift in Sources */,
-				9131973A2A189F5E00D423D7 /* MoyaLoggerPlugin.swift in Sources */,
-				9131973D2A189F7300D423D7 /* BaseTargetType.swift in Sources */,
 				913197362A189F3B00D423D7 /* dummyDTO.swift in Sources */,
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
 				913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */,
