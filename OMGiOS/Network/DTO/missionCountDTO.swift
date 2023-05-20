@@ -9,9 +9,5 @@ struct missionCountDTO: Codable {
     let code: Int?
     let success: Bool?
     let message: String?
-    let data: missionCountData?
-}
-
-struct missionCountData: Codable {
-    let completeCount: Int?
+    let data: Int?
 }

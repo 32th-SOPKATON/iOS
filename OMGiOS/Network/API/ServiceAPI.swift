@@ -11,18 +11,19 @@ import Alamofire
 
 final class ServiceAPI: ServiceProtocol {
     
+    static var serviceAPI = ServiceAPI()
+    
     func getCompleteMissionCountAPI(
         completion: @escaping (NetworkResult<Any>) -> Void
     ) {
-        let url = BaseURLConstant.base + "/mission/ing"
+        let url = BaseURLConstant.base + "/mission/count"
         let header: HTTPHeaders = [
             "Content-Type" : "application/json",
-            "Authorization" : "1"
+            "userId" : "1"
         ]
 
         let dataRequest = AF.request(url,
                                      method: .get,
-                                     encoding: JSONEncoding.default,
                                      headers: header)
 
         dataRequest.responseData { response in
@@ -44,12 +45,11 @@ final class ServiceAPI: ServiceProtocol {
         let url = BaseURLConstant.base + "/mission"
         let header: HTTPHeaders = [
             "Content-Type" : "application/json",
-            "Authorization" : "1"
+            "userId" : "1"
         ]
 
         let dataRequest = AF.request(url,
                                      method: .get,
-                                     encoding: JSONEncoding.default,
                                      headers: header)
 
         dataRequest.responseData { response in
@@ -184,11 +184,10 @@ final class ServiceAPI: ServiceProtocol {
     }
 
     func judgeStatus(
-        by statusCode: Int, _ data: Data,
+        by statusCode: Int,
+        _ data: Data,
         responseData: ResponseData
     ) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
-        print("statusCode: ", statusCode)
         switch statusCode {
         case 200..<300:
             return isValidData(data: data, responseData: responseData)
@@ -208,7 +207,7 @@ final class ServiceAPI: ServiceProtocol {
         let decoder = JSONDecoder()
         switch responseData {
         case .getCompleteMissionCountAPI:
-            guard let decodedData = try? decoder.decode(missionCardsDTO.self, from: data) else {
+            guard let decodedData = try? decoder.decode(missionCountDTO.self, from: data) else {
                 return .pathErr
             }
             return .success(decodedData)

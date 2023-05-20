@@ -38,6 +38,16 @@ final class HomeViewController: UIViewController {
         setTitleLabel()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getTeamInfoFromServer { result in
+            print(result)
+        }
+        getMissionListAPI { result in
+            print(result)
+        }
+    }
+    
     private func setTitleLabel() {
         if let text = titleLabel.text {
             let attributeString = NSMutableAttributedString(string: text)
@@ -69,6 +79,42 @@ final class HomeViewController: UIViewController {
             $0.width.equalTo(284)
             $0.height.equalTo(443)
             $0.center.equalToSuperview()
+        }
+    }
+}
+
+// MARK: - API
+
+extension HomeViewController {
+    func getTeamInfoFromServer(
+        completion: @escaping (missionCountDTO) -> Void
+    ) {
+        ServiceAPI.serviceAPI.getCompleteMissionCountAPI { result in
+            switch result {
+            case .success(let response):
+                guard let team = response as? missionCountDTO else { return }
+                completion(team)
+            case .requestErr(let errResponse):
+                dump(errResponse)
+            default:
+                print("error")
+            }
+        }
+    }
+    
+    func getMissionListAPI(
+        completion: @escaping (missionRecordDTO) -> Void
+    ) {
+        ServiceAPI.serviceAPI.getMissionListAPI() { result in
+            switch result {
+            case .success(let response):
+                guard let team = response as? missionRecordDTO else { return }
+                completion(team)
+            case .requestErr(let errResponse):
+                dump(errResponse)
+            default:
+                print("error")
+            }
         }
     }
 }
