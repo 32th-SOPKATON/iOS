@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */; };
+		8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */; };
+		8D746E0D2A19149F007CFC1C /* missionRecordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */; };
 		9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197092A189D2A00D423D7 /* AppDelegate.swift */; };
 		9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970B2A189D2A00D423D7 /* SceneDelegate.swift */; };
 		9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970D2A189D2A00D423D7 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionCardsDTO.swift; sourceTree = "<group>"; };
+		8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionDetailDTO.swift; sourceTree = "<group>"; };
+		8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordDTO.swift; sourceTree = "<group>"; };
 		913197062A189D2A00D423D7 /* OMGiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913197092A189D2A00D423D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9131970B2A189D2A00D423D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				913197352A189F3B00D423D7 /* dummyDTO.swift */,
+				8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */,
+				8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */,
+				8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -313,14 +322,17 @@
 				913197412A189F9000D423D7 /* NetworkResult.swift in Sources */,
 				913197272A189DED00D423D7 /* UIView+Extension.swift in Sources */,
 				9131973A2A189F5E00D423D7 /* MoyaLoggerPlugin.swift in Sources */,
+				8D746E0D2A19149F007CFC1C /* missionRecordDTO.swift in Sources */,
 				9131973D2A189F7300D423D7 /* BaseTargetType.swift in Sources */,
 				913197362A189F3B00D423D7 /* dummyDTO.swift in Sources */,
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
 				9131974B2A189FEE00D423D7 /* dummyRe.swift in Sources */,
 				913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */,
+				8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
+				8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
