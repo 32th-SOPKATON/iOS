@@ -55,6 +55,7 @@ class HistoryViewController: UIViewController {
         tableview.register(HistoryTableViewCell.self, forCellReuseIdentifier: HistoryTableViewCell.identifier)
         tableview.tableHeaderView = MissionRecordHeaderView()
         tableview.rowHeight = 78
+        tableview.separatorStyle = .none
         tableview.tableHeaderView?.frame.size.height = 80
         tableview.backgroundColor = .g_100
         tableview.showsVerticalScrollIndicator = false
@@ -125,7 +126,7 @@ extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.identifier, for: indexPath) as? HistoryTableViewCell else { return UITableViewCell() }
-        
+        cell.selectionStyle = .none
         cell.configureCell(dummy[indexPath.row])
                 
         return cell

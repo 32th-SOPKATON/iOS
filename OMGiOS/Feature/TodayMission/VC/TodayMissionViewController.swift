@@ -31,16 +31,24 @@ class MyViewController: UIViewController {
         button.backgroundColor = .main1
         button.titleLabel?.font = .body2Bold()
         button.setTitle("미션 선택하기", for: .normal)
+        button.addTarget(self, action: #selector(moveToNextView), for: .touchUpInside)
         return button
     }()
+    
+    @objc
+    func moveToNextView() {
+        let nextVC = MissionDetailViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
     
     private lazy var collectionView: UICollectionView = {
         let layout = CarouselCollectionViewLayout()
         layout.itemSize = CGSize(width: 273, height: 362)
 //        layout.minimumInteritemSpacing = 24
         layout.scrollDirection = .horizontal
-        
+    
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        view.showsHorizontalScrollIndicator = false
         view.dataSource = self
         view.delegate = self
         view.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "MyCell")
