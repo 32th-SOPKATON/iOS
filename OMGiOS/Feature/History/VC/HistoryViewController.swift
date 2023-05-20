@@ -27,7 +27,7 @@ class HistoryViewController: UIViewController {
     
     private let missionRecordTableView: UITableView = {
         let tableview = UITableView()
-        tableview.register(MissionRecordTableViewCell.self, forCellReuseIdentifier: MissionRecordTableViewCell.identifier)
+        tableview.register(HistoryTableViewCell.self, forCellReuseIdentifier: HistoryTableViewCell.identifier)
         tableview.tableHeaderView = MissionRecordHeaderView()
         tableview.tableHeaderView?.frame.size.height = 30
         return tableview
@@ -75,7 +75,7 @@ extension HistoryViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MissionRecordTableViewCell.identifier, for: indexPath) as? MissionRecordTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.identifier, for: indexPath) as? HistoryTableViewCell else { return UITableViewCell() }
                 
         return cell
     }

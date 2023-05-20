@@ -1,5 +1,5 @@
 //
-//  MissionRecordTableViewCell.swift
+//  HistoryTableViewCell.swift
 //  OMGiOS
 //
 //  Created by 홍유정 on 2023/05/21.
@@ -8,9 +8,9 @@
 import UIKit
 import SnapKit
 
-class MissionRecordTableViewCell: UITableViewCell {
+class HistoryTableViewCell: UITableViewCell {
     
-    static let identifier = "MissionRecordTableViewCell"
+    static let identifier = "HistoryTableViewCell"
 
         private let missionRecordLabel: UILabel = {
             let label = UILabel()
@@ -36,7 +36,7 @@ class MissionRecordTableViewCell: UITableViewCell {
             }
 }
 
-private extension MissionRecordTableViewCell {
+private extension HistoryTableViewCell {
     
     func setStyle() {
         [missionRecordLabel, missionResultImageView]
@@ -58,5 +58,9 @@ private extension MissionRecordTableViewCell {
         }
     }
     
-    // func configureCell 만들어야해 4차 과제 확인하자
+    func configureCell(_ history: MissionRecord) {
+        missionRecordLabel.text = history.missionHistory
+        missionResultImageView.image = history.image
+    }
+        
 }
