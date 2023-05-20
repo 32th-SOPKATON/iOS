@@ -16,9 +16,10 @@
 		6B80EC6F2A191690002D7235 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC6E2A191690002D7235 /* HomeViewController.swift */; };
 		6B80EC712A19169D002D7235 /* TodayMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC702A19169D002D7235 /* TodayMissionViewController.swift */; };
 		8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */; };
-		8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */; };
+		8D746E0B2A19139B007CFC1C /* (null) in Sources */ = {isa = PBXBuildFile; };
 		8DB800F42A1936E700CA76DD /* MissionRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB800F32A1936E700CA76DD /* MissionRecordTableViewCell.swift */; };
-		8DB800F62A1937DE00CA76DD /* MissionRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB800F52A1937DE00CA76DD /* MissionRecordTableViewController.swift */; };
+		8DB800F62A1937DE00CA76DD /* MissionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB800F52A1937DE00CA76DD /* MissionRecordViewController.swift */; };
+		8DC93C122A1944CE00C5A25D /* MissionRecordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC93C112A1944CE00C5A25D /* MissionRecordHeaderView.swift */; };
 		9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197092A189D2A00D423D7 /* AppDelegate.swift */; };
 		9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970B2A189D2A00D423D7 /* SceneDelegate.swift */; };
 		9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970D2A189D2A00D423D7 /* ViewController.swift */; };
@@ -56,7 +57,8 @@
 		8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionCardsDTO.swift; sourceTree = "<group>"; };
 		8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordDTO.swift; sourceTree = "<group>"; };
 		8DB800F32A1936E700CA76DD /* MissionRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRecordTableViewCell.swift; sourceTree = "<group>"; };
-		8DB800F52A1937DE00CA76DD /* MissionRecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRecordTableViewController.swift; sourceTree = "<group>"; };
+		8DB800F52A1937DE00CA76DD /* MissionRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRecordViewController.swift; sourceTree = "<group>"; };
+		8DC93C112A1944CE00C5A25D /* MissionRecordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRecordHeaderView.swift; sourceTree = "<group>"; };
 		913197062A189D2A00D423D7 /* OMGiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913197092A189D2A00D423D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9131970B2A189D2A00D423D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		6B80EC682A191636002D7235 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				8DC93C102A19449900C5A25D /* View */,
 				6B80EC6B2A191671002D7235 /* VC */,
 			);
 			path = History;
@@ -155,9 +158,17 @@
 			isa = PBXGroup;
 			children = (
 				8DB800F32A1936E700CA76DD /* MissionRecordTableViewCell.swift */,
-				8DB800F52A1937DE00CA76DD /* MissionRecordTableViewController.swift */,
+				8DB800F52A1937DE00CA76DD /* MissionRecordViewController.swift */,
 			);
 			path = MissionRecordView;
+			sourceTree = "<group>";
+		};
+		8DC93C102A19449900C5A25D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DC93C112A1944CE00C5A25D /* MissionRecordHeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		913196FD2A189D2A00D423D7 = {
@@ -428,7 +439,7 @@
 				913197272A189DED00D423D7 /* UIView+Extension.swift in Sources */,
 				913197542A19129B00D423D7 /* ResponseData.swift in Sources */,
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
-				8DB800F62A1937DE00CA76DD /* MissionRecordTableViewController.swift in Sources */,
+				8DB800F62A1937DE00CA76DD /* MissionRecordViewController.swift in Sources */,
 				913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */,
 				9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */,
 				6B80EC652A1908E3002D7235 /* CustomTabBarController.swift in Sources */,
@@ -437,12 +448,13 @@
 				913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */,
 				6B32E5632A19374F009E30B5 /* completeMissionDTO.swift in Sources */,
 				8DB800F42A1936E700CA76DD /* MissionRecordTableViewCell.swift in Sources */,
-				8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */,
+				8D746E0B2A19139B007CFC1C /* (null) in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
 				6B80EC6A2A19166D002D7235 /* HistoryViewController.swift in Sources */,
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
 				913197572A191DC200D423D7 /* BaseView.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
+				8DC93C122A1944CE00C5A25D /* MissionRecordHeaderView.swift in Sources */,
 				9131975A2A191EE600D423D7 /* RateView.swift in Sources */,
 				8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */,
 			);

@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MissionRecordTableViewController: UITableViewController {
+class MissionRecordViewController: UIViewController {
     
     private let missionRecordTitleLabel: UILabel = {
         let label = UILabel()
@@ -35,13 +35,25 @@ class MissionRecordTableViewController: UITableViewController {
     
 }
 
-private extension MissionRecordTableViewController {
+private extension MissionRecordViewController {
     
     func setStyle() {
+        
         
     }
     func setLayout() {
         view.adds([missionRecordTitleLabel, todayMissionLabel, missionRecordTableView])
         
+        missionRecordTitleLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(45)
+        }
+        
+        todayMissionLabel.snp.makeConstraints {
+            $0.top.equalTo(missionRecordTitleLabel.snp.bottom).offset(24)
+        }
+        
+        missionRecordTableView.snp.makeConstraints {
+            $0.top.equalTo(todayMissionLabel.snp.bottom).offset(32)
+        }
     }
 }

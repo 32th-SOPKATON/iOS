@@ -14,6 +14,7 @@ class MissionRecordTableViewCell: UITableViewCell {
 
         private let missionRecordLabel: UILabel = {
             let label = UILabel()
+            label.text = "지난미션 테이블뷰셀"
             label.textAlignment = .center
             return label
         }()
