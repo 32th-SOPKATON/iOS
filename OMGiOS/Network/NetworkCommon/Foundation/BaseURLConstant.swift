@@ -8,5 +8,5 @@
 import Foundation
 
 struct BaseURLConstant {
-    static let base = "15.164.99.130:8080"
+    static let base = "https://15.164.99.130"
 }

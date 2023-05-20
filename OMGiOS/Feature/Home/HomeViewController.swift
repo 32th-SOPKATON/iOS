@@ -43,9 +43,9 @@ final class HomeViewController: UIViewController {
         getTeamInfoFromServer { result in
             print(result)
         }
-//        getMissionListAPI { result in
-//            print(result)
-//        }
+        getMissionListAPI { result in
+            print(result)
+        }
     }
     
     private func setTitleLabel() {
@@ -87,12 +87,12 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController {
     func getTeamInfoFromServer(
-        completion: @escaping (missionCardsDTO) -> Void
+        completion: @escaping (missionCountDTO) -> Void
     ) {
         ServiceAPI.serviceAPI.getCompleteMissionCountAPI { result in
             switch result {
             case .success(let response):
-                guard let team = response as? missionCardsDTO else { return }
+                guard let team = response as? missionCountDTO else { return }
                 completion(team)
             case .requestErr(let errResponse):
                 dump(errResponse)
