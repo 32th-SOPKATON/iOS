@@ -7,65 +7,46 @@
 
 import UIKit
 
-class CustomTabBarController: UITabBarController {
+import SnapKit
+
+final class CustomTabBarController: UITabBarController {
     
-    // MARK: - Property
+    fileprivate lazy var defaultTabBarHeight = { tabBar.frame.size.height }()
     
-    
-    // MARK: - UI Property
-    
-    
-    // MARK: - Life Cycle
+    let firstVC = MyViewController()
+    let secondVC = HomeViewController()
+    let thirdVC = HistoryViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
+        setUpTabBar()
+        setNavigation()
+        selectedIndex = 1
+    }
+    
+    private func setUpTabBar(){
+        self.tabBar.tintColor = .main1
+        self.tabBar.unselectedItemTintColor = .black
+        self.tabBar.isTranslucent = false
+        self.tabBar.backgroundColor = .white
+
+        firstVC.title = "오늘 미션"
+        secondVC.title = "홈"
+        thirdVC.title = "지난 기록"
+
+        let ViewControllers:[UIViewController] = [firstVC,secondVC,thirdVC]
+        self.setViewControllers(ViewControllers, animated: true)
+
+        firstVC.tabBarItem.image = UIImage(systemName: "rectangle.on.rectangle")
+        secondVC.tabBarItem.image = ImageLiterals.tab
+        thirdVC.tabBarItem.image = UIImage(systemName: "folder")
         
-        setStyle()
-        setViewController()
+        self.hidesBottomBarWhenPushed = false
+        viewWillLayoutSubviews()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        hiddenNavigationBar()
+    private func setNavigation() {
+        self.navigationItem.hidesBackButton = true
     }
-    
-    // MARK: - Setting
-    
-    private func setStyle() {
-        self.tabBar.backgroundColor = .black
-    }
-    
-    private func setViewController() {
-        let homeViewController = HomeViewController()
-        homeViewController.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "star.fill"), tag: 0)
-        let homeNavigationController = UINavigationController(rootViewController: homeViewController)
-        homeNavigationController.setNavigationBarHidden(true, animated: true)
-
-        let todayMissionViewController = TodayMissionViewController()
-        todayMissionViewController.tabBarItem = UITabBarItem(title: "오늘 미션", image: UIImage(systemName: "star.fill"), tag: 0)
-        let todayMissionNavigationController = UINavigationController(rootViewController: todayMissionViewController)
-
-
-        let historyViewController = HistoryViewController()
-        historyViewController.tabBarItem = UITabBarItem(title: "지난 기록", image: UIImage(systemName: "star.fill"), tag: 0)
-        let historyNavigationController = UINavigationController(rootViewController: historyViewController)
-
-
-        viewControllers = [homeNavigationController,
-                           todayMissionNavigationController,
-                           historyNavigationController]
-    }
-    
-    
-    // MARK: - Action Helper
-    
-    
-    // MARK: - Custom Method
-    
-    private func hiddenNavigationBar() {
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    
 }

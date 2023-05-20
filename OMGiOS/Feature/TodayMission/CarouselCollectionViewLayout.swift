@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CarouselCollectionViewLayout: UICollectionViewFlowLayout {
+class CarouselCollectionViewLayout1: UICollectionViewFlowLayout {
     
     override init() {
         super.init()
@@ -56,3 +56,4 @@ final class CarouselCollectionViewLayout: UICollectionViewFlowLayout {
     }
 
 }
+
