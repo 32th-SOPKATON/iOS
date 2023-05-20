@@ -10,4 +10,5 @@ import UIKit
 struct MissionRecord {
     let image: UIImage
     let missionHistory: String
+    let recordDate: String
 }
