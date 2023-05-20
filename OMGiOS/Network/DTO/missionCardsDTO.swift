@@ -13,6 +13,6 @@ struct missionCardsDTO: Codable {
 }
 
 struct MissionCardsData: Codable {
-    let missionID: Int?
+    let missionId: Int?
     let missionContent: String?
 }

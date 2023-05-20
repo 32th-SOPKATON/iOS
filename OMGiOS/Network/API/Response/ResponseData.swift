@@ -9,8 +9,10 @@ import Foundation
 
 @frozen
 enum ResponseData {
-    case getTodayMissionAPI
-    case postTodayMissionAPI
+    case getCompleteMissionCountAPI
     case getMissionListAPI
+    case postTodayMissionAPI
+    case getCompleteMissionListAPI
     case postMissionFinishAPI
+    case getTodayMissionAPI
 }

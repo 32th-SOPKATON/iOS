@@ -8,17 +8,24 @@
 import UIKit
 
 protocol ServiceProtocol {
-    func getTodayMissionAPI(
+    func getCompleteMissionCountAPI(
+        completion: @escaping (NetworkResult<Any>) -> Void
+    )
+    func getMissionListAPI(
         completion: @escaping (NetworkResult<Any>) -> Void
     )
     func postTodayMissionAPI(
         missionID: Int,
         completion: @escaping (NetworkResult<Any>) -> Void
     )
-    func getMissionListAPI(
+    func getCompleteMissionListAPI(
         completion: @escaping (NetworkResult<Any>) -> Void
     )
     func postMissionFinishAPI(
-        missinID: Int, completion: @escaping (NetworkResult<Any>) -> Void
+        missionID: Int,
+        completion: @escaping (NetworkResult<Any>) -> Void
+    )
+    func getTodayMissionAPI(
+        completion: @escaping (NetworkResult<Any>) -> Void
     )
 }
