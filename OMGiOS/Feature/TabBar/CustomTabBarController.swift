@@ -32,23 +32,25 @@ class CustomTabBarController: UITabBarController {
     
     // MARK: - Setting
     
-    private func setStyle() { }
+    private func setStyle() {
+        self.tabBar.backgroundColor = .black
+    }
     
     private func setViewController() {
         let homeViewController = HomeViewController()
-//        homeViewController.tabBarItem = UITabBarItem(title: "홈", image: , tag: 0)
+        homeViewController.tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "star.fill"), tag: 0)
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         homeNavigationController.setNavigationBarHidden(true, animated: true)
 
         let todayMissionViewController = TodayMissionViewController()
-//        todayMissionViewController.tabBarItem = UITabBarItem(title: "오늘 미션", image: , tag: 0)
+        todayMissionViewController.tabBarItem = UITabBarItem(title: "오늘 미션", image: UIImage(systemName: "star.fill"), tag: 0)
         let todayMissionNavigationController = UINavigationController(rootViewController: todayMissionViewController)
-        todayMissionNavigationController.setNavigationBarHidden(true, animated: true)
+
 
         let historyViewController = TodayMissionViewController()
-//        todayMissionViewController.tabBarItem = UITabBarItem(title: "지난 기록", image: , tag: 0)
+        historyViewController.tabBarItem = UITabBarItem(title: "지난 기록", image: UIImage(systemName: "star.fill"), tag: 0)
         let historyNavigationController = UINavigationController(rootViewController: historyViewController)
-        historyNavigationController.setNavigationBarHidden(true, animated: true)
+
 
         viewControllers = [homeNavigationController,
                            todayMissionNavigationController,
