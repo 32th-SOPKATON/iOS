@@ -16,10 +16,15 @@ class MyViewController: UIViewController {
         label.font = .display()
         label.text = "보연님! 오늘의 미션을 선택해 볼까요?"
         label.numberOfLines = 0
+        label.asColor(targetString: "보연님!", color: .main1)
         return label
     }()
     
-    private let myTopView = UIView()
+    private let myTopView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        return view
+    }()
     
     private lazy var selectButton: UIButton = {
         let button = UIButton()
@@ -30,9 +35,9 @@ class MyViewController: UIViewController {
     }()
     
     private lazy var collectionView: UICollectionView = {
-        let layout = CarouselCollectionViewLayout1()
+        let layout = CarouselCollectionViewLayout()
         layout.itemSize = CGSize(width: 273, height: 362)
-        layout.minimumInteritemSpacing = 24.0
+//        layout.minimumInteritemSpacing = 24
         layout.scrollDirection = .horizontal
         
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -47,6 +52,8 @@ class MyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.navigationController?.isNavigationBarHidden = false
+//        navigationController?.navigationBar.backgroundColor = .white
         
         setUI()
         setLayout()
@@ -59,6 +66,8 @@ extension MyViewController {
     
     private func setUI() {
         view.backgroundColor = .g_100
+        
+        selectButton.layer.cornerRadius = 12
     }
     
     private func setLayout() {
@@ -66,16 +75,16 @@ extension MyViewController {
         
         myTopView.addSubview(selectLabel)
         
-        selectLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(64)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-115)
+        myTopView.snp.makeConstraints {
+            $0.top.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(160+45)
         }
         
-        myTopView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide)
-            $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(160)
+        selectLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(64+45)
+            $0.leading.equalToSuperview().offset(20)
+            $0.trailing.equalToSuperview().offset(-115)
         }
         
         collectionView.snp.makeConstraints {
@@ -100,6 +109,8 @@ extension MyViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("User tapped on item \(indexPath.row)")
     }
+    
+    
 }
 
 // MARK: - UICollectionViewDataSource
@@ -112,7 +123,20 @@ extension MyViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCell", for: indexPath) as! MyCollectionViewCell
         myCell.backgroundColor = UIColor.white
+        myCell.layer.cornerRadius = 20
+        myCell.layer.borderColor = UIColor.g_700.cgColor
+        myCell.layer.borderWidth = 1
         return myCell
     }
 
+}
+
+extension UILabel {
+    func asColor(targetString: String, color: UIColor) {
+        let fullText = text ?? ""
+        let attributedString = NSMutableAttributedString(string: fullText)
+        let range = (fullText as NSString).range(of: targetString)
+        attributedString.addAttribute(.foregroundColor, value: color, range: range)
+        attributedText = attributedString
+    }
 }
