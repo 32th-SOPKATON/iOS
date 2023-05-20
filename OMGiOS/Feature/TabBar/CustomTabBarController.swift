@@ -44,7 +44,7 @@ class CustomTabBarController: UITabBarController {
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         homeNavigationController.setNavigationBarHidden(true, animated: true)
 
-        let todayMissionViewController = TodayMissionViewController()
+        let todayMissionViewController = MyViewController()
         todayMissionViewController.tabBarItem = UITabBarItem(title: "오늘 미션", image: UIImage(systemName: "star.fill"), tag: 0)
         let todayMissionNavigationController = UINavigationController(rootViewController: todayMissionViewController)
 

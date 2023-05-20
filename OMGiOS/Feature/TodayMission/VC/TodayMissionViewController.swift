@@ -9,7 +9,7 @@ import UIKit
 
 import SnapKit
 
-class MyViewController1: UIViewController {
+class MyViewController: UIViewController {
 
     private lazy var collectionView: UICollectionView = {
         let layout = CarouselCollectionViewLayout1()
@@ -41,14 +41,14 @@ class MyViewController1: UIViewController {
 
 }
 
-extension MyViewController1: UICollectionViewDelegate {
+extension MyViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("User tapped on item \(indexPath.row)")
     }
     
 }
-extension MyViewController1: UICollectionViewDataSource {
+extension MyViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4 // How many cells to display
