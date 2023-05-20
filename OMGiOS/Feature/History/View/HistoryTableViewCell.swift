@@ -58,5 +58,9 @@ private extension HistoryTableViewCell {
         }
     }
     
-    // func configureCell 만들어야해 4차 과제 확인하자
+    func configureCell(_ history: MissionRecord) {
+        missionRecordLabel.text = history.missionHistory
+        missionResultImageView.image = history.image
+    }
+        
 }
