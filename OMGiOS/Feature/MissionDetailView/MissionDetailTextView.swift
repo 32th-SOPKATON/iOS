@@ -13,14 +13,17 @@ final class MissionDetailTextView: BaseView {
     
     let contentsView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         return view
     }()
     
     let title: UILabel = {
         let title = UILabel()
-        title.text = "asdfwefwefwef"
-        title.font = UIFont(name: "Avenir-Black", size: 17)
+        title.text = "아이에게 우리의 가족 배경을 어떻게\n설명할 지 고민해 보기!"
+        title.numberOfLines = 2
+        title.font = .body2Bold()
+        title.textColor = .g_700
+        title.textAlignment = .center
         return title
     }()
     
@@ -33,7 +36,7 @@ final class MissionDetailTextView: BaseView {
         }
         
         title.snp.makeConstraints {
-            $0.center.equalToSuperview()
+            $0.edges.equalToSuperview()
         }
     }
 }
