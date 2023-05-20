@@ -13,7 +13,6 @@
 		913197132A189D2D00D423D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913197122A189D2D00D423D7 /* Assets.xcassets */; };
 		913197162A189D2D00D423D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913197142A189D2D00D423D7 /* LaunchScreen.storyboard */; };
 		9131971F2A189D8200D423D7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9131971E2A189D8200D423D7 /* SnapKit */; };
-		913197222A189DBF00D423D7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 913197212A189DBF00D423D7 /* Moya */; };
 		913197272A189DED00D423D7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197262A189DED00D423D7 /* UIView+Extension.swift */; };
 		913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197282A189DFD00D423D7 /* UIStackView+Extension.swift */; };
 		9131972B2A189E0900D423D7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131972A2A189E0900D423D7 /* UIColor.swift */; };
@@ -27,6 +26,7 @@
 		913197452A189FA900D423D7 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197442A189FA900D423D7 /* URLConstants.swift */; };
 		913197482A189FDD00D423D7 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197472A189FDD00D423D7 /* dummy.swift */; };
 		9131974B2A189FEE00D423D7 /* dummyRe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131974A2A189FEE00D423D7 /* dummyRe.swift */; };
+		9131974E2A1901C600D423D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9131974D2A1901C600D423D7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				913197222A189DBF00D423D7 /* Moya in Frameworks */,
 				9131971F2A189D8200D423D7 /* SnapKit in Frameworks */,
+				9131974E2A1901C600D423D7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +245,7 @@
 			name = OMGiOS;
 			packageProductDependencies = (
 				9131971E2A189D8200D423D7 /* SnapKit */,
-				913197212A189DBF00D423D7 /* Moya */,
+				9131974D2A1901C600D423D7 /* Alamofire */,
 			);
 			productName = OMGiOS;
 			productReference = 913197062A189D2A00D423D7 /* OMGiOS.app */;
@@ -277,7 +277,7 @@
 			mainGroup = 913196FD2A189D2A00D423D7;
 			packageReferences = (
 				9131971D2A189D8200D423D7 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				913197202A189DBF00D423D7 /* XCRemoteSwiftPackageReference "Moya" */,
+				9131974C2A1901C600D423D7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 913197072A189D2A00D423D7 /* Products */;
 			projectDirPath = "";
@@ -538,9 +538,9 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		913197202A189DBF00D423D7 /* XCRemoteSwiftPackageReference "Moya" */ = {
+		9131974C2A1901C600D423D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya";
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -554,10 +554,10 @@
 			package = 9131971D2A189D8200D423D7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		913197212A189DBF00D423D7 /* Moya */ = {
+		9131974D2A1901C600D423D7 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 913197202A189DBF00D423D7 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
+			package = 9131974C2A1901C600D423D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
