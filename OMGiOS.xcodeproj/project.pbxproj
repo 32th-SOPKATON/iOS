@@ -13,6 +13,9 @@
 		6B32E5612A193696009E30B5 /* selectMissionCardDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32E5602A193696009E30B5 /* selectMissionCardDTO.swift */; };
 		6B32E5632A19374F009E30B5 /* completeMissionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32E5622A19374F009E30B5 /* completeMissionDTO.swift */; };
 		6B32E5652A1937BF009E30B5 /* searchTodayMissionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32E5642A1937BF009E30B5 /* searchTodayMissionDTO.swift */; };
+		6B32E5672A193F3A009E30B5 /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B32E5662A193F3A009E30B5 /* FontLiterals.swift */; };
+		6B32E56B2A1940B4009E30B5 /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B32E5692A1940B4009E30B5 /* Pretendard-Bold.ttf */; };
+		6B32E56C2A1940B4009E30B5 /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B32E56A2A1940B4009E30B5 /* Pretendard-Medium.ttf */; };
 		6B80EC652A1908E3002D7235 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC642A1908E3002D7235 /* CustomTabBarController.swift */; };
 		6B80EC6A2A19166D002D7235 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC692A19166D002D7235 /* HistoryViewController.swift */; };
 		6B80EC6F2A191690002D7235 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC6E2A191690002D7235 /* HomeViewController.swift */; };
@@ -33,8 +36,6 @@
 		9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131972D2A189E1E00D423D7 /* ImageLiterals.swift */; };
 		9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131973E2A189F8100D423D7 /* BaseURLConstant.swift */; };
 		913197412A189F9000D423D7 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197402A189F9000D423D7 /* NetworkResult.swift */; };
-		913197432A189F9D00D423D7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197422A189F9D00D423D7 /* NetworkService.swift */; };
-		913197452A189FA900D423D7 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197442A189FA900D423D7 /* URLConstants.swift */; };
 		9131974E2A1901C600D423D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9131974D2A1901C600D423D7 /* Alamofire */; };
 		913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131974F2A1906D000D423D7 /* ServiceAPI.swift */; };
 		913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197512A1906F000D423D7 /* ServiceProtocol.swift */; };
@@ -44,6 +45,7 @@
 		9131975C2A19208E00D423D7 /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */; };
 		9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */; };
 		913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975F2A1927F400D423D7 /* MissionDetailView.swift */; };
+		916DEF562A1942DB00F6304E /* missionRecordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916DEF552A1942DB00F6304E /* missionRecordDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,12 +55,14 @@
 		6B32E5602A193696009E30B5 /* selectMissionCardDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectMissionCardDTO.swift; sourceTree = "<group>"; };
 		6B32E5622A19374F009E30B5 /* completeMissionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = completeMissionDTO.swift; sourceTree = "<group>"; };
 		6B32E5642A1937BF009E30B5 /* searchTodayMissionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTodayMissionDTO.swift; sourceTree = "<group>"; };
+		6B32E5662A193F3A009E30B5 /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		6B32E5692A1940B4009E30B5 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		6B32E56A2A1940B4009E30B5 /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
 		6B80EC642A1908E3002D7235 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		6B80EC692A19166D002D7235 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		6B80EC6E2A191690002D7235 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6B80EC702A19169D002D7235 /* TodayMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMissionViewController.swift; sourceTree = "<group>"; };
 		8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionCardsDTO.swift; sourceTree = "<group>"; };
-		8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordDTO.swift; sourceTree = "<group>"; };
 		8DB800F32A1936E700CA76DD /* MissionRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRecordTableViewCell.swift; sourceTree = "<group>"; };
 		8DB800F52A1937DE00CA76DD /* MissionRecordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRecordTableViewController.swift; sourceTree = "<group>"; };
 		913197062A189D2A00D423D7 /* OMGiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +78,6 @@
 		9131972D2A189E1E00D423D7 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
 		9131973E2A189F8100D423D7 /* BaseURLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLConstant.swift; sourceTree = "<group>"; };
 		913197402A189F9000D423D7 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		913197422A189F9D00D423D7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		913197442A189FA900D423D7 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		9131974F2A1906D000D423D7 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		913197512A1906F000D423D7 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		913197532A19129B00D423D7 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
 		9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailTextView.swift; sourceTree = "<group>"; };
 		9131975F2A1927F400D423D7 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
+		916DEF552A1942DB00F6304E /* missionRecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B32E5682A1940A5009E30B5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6B32E5692A1940B4009E30B5 /* Pretendard-Bold.ttf */,
+				6B32E56A2A1940B4009E30B5 /* Pretendard-Medium.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		6B80EC632A190886002D7235 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				9131972D2A189E1E00D423D7 /* ImageLiterals.swift */,
+				6B32E5662A193F3A009E30B5 /* FontLiterals.swift */,
 			);
 			path = Literal;
 			sourceTree = "<group>";
@@ -234,6 +247,7 @@
 		9131972F2A189E2B00D423D7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6B32E5682A1940A5009E30B5 /* Font */,
 				913197122A189D2D00D423D7 /* Assets.xcassets */,
 				913197142A189D2D00D423D7 /* LaunchScreen.storyboard */,
 			);
@@ -284,12 +298,12 @@
 		913197342A189F3200D423D7 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
-				8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */,
 				6B32E55E2A19349E009E30B5 /* missionCountDTO.swift */,
-				8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */,
+				8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */,
 				6B32E5622A19374F009E30B5 /* completeMissionDTO.swift */,
 				6B32E5602A193696009E30B5 /* selectMissionCardDTO.swift */,
 				6B32E5642A1937BF009E30B5 /* searchTodayMissionDTO.swift */,
+				916DEF552A1942DB00F6304E /* missionRecordDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -307,8 +321,6 @@
 			children = (
 				9131973E2A189F8100D423D7 /* BaseURLConstant.swift */,
 				913197402A189F9000D423D7 /* NetworkResult.swift */,
-				913197422A189F9D00D423D7 /* NetworkService.swift */,
-				913197442A189FA900D423D7 /* URLConstants.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -317,8 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				9131974F2A1906D000D423D7 /* ServiceAPI.swift */,
-				913197512A1906F000D423D7 /* ServiceProtocol.swift */,
-				913197532A19129B00D423D7 /* ResponseData.swift */,
+				913197622A193F5500D423D7 /* Response */,
+				913197612A193C2500D423D7 /* Protocol */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -340,6 +352,22 @@
 				9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */,
 			);
 			path = MissionDetailView;
+			sourceTree = "<group>";
+		};
+		913197612A193C2500D423D7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				913197512A1906F000D423D7 /* ServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		913197622A193F5500D423D7 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				913197532A19129B00D423D7 /* ResponseData.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +436,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B32E56C2A1940B4009E30B5 /* Pretendard-Medium.ttf in Resources */,
 				913197162A189D2D00D423D7 /* LaunchScreen.storyboard in Resources */,
+				6B32E56B2A1940B4009E30B5 /* Pretendard-Bold.ttf in Resources */,
 				913197132A189D2D00D423D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,7 +459,6 @@
 				913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */,
 				3768AF5F2A19449500B23D74 /* HomeCollectionViewCell.swift in Sources */,
 				3768AF612A1944C200B23D74 /* CarouselCollectionViewLayout.swift in Sources */,
-				913197452A189FA900D423D7 /* URLConstants.swift in Sources */,
 				913197412A189F9000D423D7 /* NetworkResult.swift in Sources */,
 				6B32E55F2A19349E009E30B5 /* missionCountDTO.swift in Sources */,
 				913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */,
@@ -438,6 +467,7 @@
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
 				8DB800F62A1937DE00CA76DD /* MissionRecordTableViewController.swift in Sources */,
 				913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */,
+				6B32E5672A193F3A009E30B5 /* FontLiterals.swift in Sources */,
 				9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */,
 				6B80EC652A1908E3002D7235 /* CustomTabBarController.swift in Sources */,
 				6B80EC712A19169D002D7235 /* TodayMissionViewController.swift in Sources */,
@@ -447,8 +477,8 @@
 				8DB800F42A1936E700CA76DD /* MissionRecordTableViewCell.swift in Sources */,
 				8D746E0B2A19139B007CFC1C /* (null) in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
+				916DEF562A1942DB00F6304E /* missionRecordDTO.swift in Sources */,
 				6B80EC6A2A19166D002D7235 /* HistoryViewController.swift in Sources */,
-				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
 				913197572A191DC200D423D7 /* BaseView.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
 				9131975A2A191EE600D423D7 /* RateView.swift in Sources */,

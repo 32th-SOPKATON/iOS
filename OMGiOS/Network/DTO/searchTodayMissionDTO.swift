@@ -13,6 +13,6 @@ struct searchTodayMissionDTO: Codable {
 }
 
 struct earchTodayMissionData: Codable {
-    let missionID: Int?
+    let missionId: Int?
     let missionContent: String?
 }

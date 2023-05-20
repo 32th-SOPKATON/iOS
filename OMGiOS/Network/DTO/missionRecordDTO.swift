@@ -2,8 +2,10 @@
 //  missionRecordDTO.swift
 //  OMGiOS
 //
-//  Created by 홍유정 on 2023/05/20.
+//  Created by 홍준혁 on 2023/05/21.
 //
+
+import Foundation
 
 struct missionRecordDTO: Codable {
     let code: Int?
@@ -13,6 +15,7 @@ struct missionRecordDTO: Codable {
 }
 
 struct missionRecordData: Codable {
-    let missionID: Int?
+    let missionId: Int?
+    let missoionTitle: String?
     let missionContent: String?
 }
