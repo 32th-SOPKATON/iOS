@@ -12,28 +12,28 @@
     <tr align="center">
         <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="https://github.com/32th-SOPKATON/iOS/assets/97212841/9bb1bea9-e302-4cca-8876-1e3a5d523671">
+              <img src="https://github.com/32th-SOPKATON/iOS/assets/97212841/230daeb7-af92-4b35-b5c2-67028258f869" width="200" alt="">
               <br />
               <b> joonBaek12 </b>
             </a>
         </td>
       <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <img src="https://github.com/32th-SOPKATON/iOS/assets/97212841/0ec66f6e-6f5b-4d73-8dd8-43124dbe9ebc" width="200" alt="깃허브계정-프로필사진">
               <br />
               <b>hongjunehuke</b>
             </a>
         </td>
       <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <img src="https://github.com/32th-SOPKATON/iOS/assets/97212841/a324dcc7-185e-4012-bd10-523d24cc4757" width="200" alt="깃허브계정-프로필사진">
               <br />
               <b>yeahh315</b>
             </a>
         </td>
       <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <img src="https://github.com/32th-SOPKATON/iOS/assets/97212841/1b814789-cd1d-4a34-a1b4-4d53144c6b64" width="200" alt="깃허브계정-프로필사진">
               <br />
               <b>hyj422</b>
             </a>
