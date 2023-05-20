@@ -10,48 +10,27 @@ import Foundation
 import Alamofire
 
 final class ServiceAPI: ServiceProtocol {
-    func getTodayMissionAPI(
+    
+    func getCompleteMissionCountAPI(
         completion: @escaping (NetworkResult<Any>) -> Void
     ) {
-        let url = BaseURLConstant.base + ""
-        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        let url = BaseURLConstant.base + "/mission/ing"
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "Authorization" : "1"
+        ]
 
         let dataRequest = AF.request(url,
                                      method: .get,
                                      encoding: JSONEncoding.default,
                                      headers: header)
-        
-        dataRequest.responseData { response in
-            switch response.result {
-            case .success:
-                guard let statusCode = response.response?.statusCode else { return }
-                guard let value = response.data else { return }
-                let networkResult = self.judgeStatus(by: statusCode, value, responseData: .getTodayMissionAPI)
-                completion(networkResult)
-            case .failure:
-                completion(.networkFail)
-            }
-        }
-    }
-    
-    func postTodayMissionAPI(
-        missionID: Int,
-        completion: @escaping (NetworkResult<Any>) -> Void
-    ) {
-        let url = BaseURLConstant.base + ""
-        let header: HTTPHeaders = ["Content-Type" : "application/json"]
 
-        let dataRequest = AF.request(url,
-                                     method: .post,
-                                     encoding: JSONEncoding.default,
-                                     headers: header)
-        
         dataRequest.responseData { response in
             switch response.result {
             case .success:
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let value = response.data else { return }
-                let networkResult = self.judgeStatus(by: statusCode, value, responseData: .postTodayMissionAPI)
+                let networkResult = self.judgeStatus(by: statusCode, value, responseData: .getCompleteMissionCountAPI)
                 completion(networkResult)
             case .failure:
                 completion(.networkFail)
@@ -62,14 +41,17 @@ final class ServiceAPI: ServiceProtocol {
     func getMissionListAPI(
         completion: @escaping (NetworkResult<Any>) -> Void
     ) {
-        let url = BaseURLConstant.base + ""
-        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        let url = BaseURLConstant.base + "/mission"
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "Authorization" : "1"
+        ]
 
         let dataRequest = AF.request(url,
-                                     method: .post,
+                                     method: .get,
                                      encoding: JSONEncoding.default,
                                      headers: header)
-        
+
         dataRequest.responseData { response in
             switch response.result {
             case .success:
@@ -83,18 +65,84 @@ final class ServiceAPI: ServiceProtocol {
         }
     }
     
-    func postMissionFinishAPI(
-        missinID: Int,
+    func postTodayMissionAPI(
+        missionID: Int,
         completion: @escaping (NetworkResult<Any>) -> Void
     ) {
-        let url = BaseURLConstant.base + ""
-        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        let url = BaseURLConstant.base + "/mission/"
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "Authorization" : "1"
+        ]
+        let body: Parameters = [
+            "missionId": missionID
+        ]
+
+        let dataRequest = AF.request(url,
+                                     method: .get,
+                                     parameters: body,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
+
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.data else { return }
+                let networkResult = self.judgeStatus(by: statusCode, value, responseData: .postTodayMissionAPI)
+                completion(networkResult)
+            case .failure:
+                completion(.networkFail)
+            }
+        }
+    }
+    
+    func getCompleteMissionListAPI(
+        completion: @escaping (NetworkResult<Any>) -> Void
+    ) {
+        let url = BaseURLConstant.base + "/mission/done"
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "Authorization" : "1"
+        ]
+
+        let dataRequest = AF.request(url,
+                                     method: .get,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
+
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.data else { return }
+                let networkResult = self.judgeStatus(by: statusCode, value, responseData: .getCompleteMissionListAPI)
+                completion(networkResult)
+            case .failure:
+                completion(.networkFail)
+            }
+        }
+    }
+    
+    func postMissionFinishAPI(
+        missionID: Int,
+        completion: @escaping (NetworkResult<Any>) -> Void
+    ) {
+        let url = BaseURLConstant.base + "/mission/complete/"
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "Authorization" : "1"
+        ]
+        let body: Parameters = [
+            "missionId": missionID
+        ]
 
         let dataRequest = AF.request(url,
                                      method: .post,
+                                     parameters: body,
                                      encoding: JSONEncoding.default,
                                      headers: header)
-        
+
         dataRequest.responseData { response in
             switch response.result {
             case .success:
@@ -107,8 +155,38 @@ final class ServiceAPI: ServiceProtocol {
             }
         }
     }
+    
+    func getTodayMissionAPI(
+        completion: @escaping (NetworkResult<Any>) -> Void
+    ) {
+        let url = BaseURLConstant.base + "/mission/ing"
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "Authorization" : "1"
+        ]
 
-    func judgeStatus(by statusCode: Int, _ data: Data, responseData: ResponseData) -> NetworkResult<Any> {
+        let dataRequest = AF.request(url,
+                                     method: .get,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
+
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.data else { return }
+                let networkResult = self.judgeStatus(by: statusCode, value, responseData: .getTodayMissionAPI)
+                completion(networkResult)
+            case .failure:
+                completion(.networkFail)
+            }
+        }
+    }
+
+    func judgeStatus(
+        by statusCode: Int, _ data: Data,
+        responseData: ResponseData
+    ) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         print("statusCode: ", statusCode)
         switch statusCode {
@@ -123,21 +201,36 @@ final class ServiceAPI: ServiceProtocol {
         }
     }
 
-    func isValidData(data: Data, responseData: ResponseData) -> NetworkResult<Any> {
+    func isValidData(
+        data: Data,
+        responseData: ResponseData
+    ) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
         switch responseData {
-        case .getTodayMissionAPI:
-            guard let decodedData = try? decoder.decode([String].self, from: data) else {
+        case .getCompleteMissionCountAPI:
+            guard let decodedData = try? decoder.decode(missionCardsDTO.self, from: data) else {
                 return .pathErr
             }
             return .success(decodedData)
-        case .postTodayMissionAPI: return .success((Any).self)
         case .getMissionListAPI:
-            guard let decodedData = try? decoder.decode([String].self, from: data) else {
+            guard let decodedData = try? decoder.decode(missionRecordDTO.self, from: data) else {
                 return .pathErr
             }
             return .success(decodedData)
-        case .postMissionFinishAPI: return .success((Any).self)
+        case .postTodayMissionAPI:
+            return .success((Any).self)
+        case .getCompleteMissionListAPI:
+            guard let decodedData = try? decoder.decode(completeMissionDTO.self, from: data) else {
+                return .pathErr
+            }
+            return .success(decodedData)
+        case .postMissionFinishAPI:
+            return .success((Any).self)
+        case .getTodayMissionAPI:
+            guard let decodedData = try? decoder.decode(searchTodayMissionDTO.self, from: data) else {
+                return .pathErr
+            }
+            return .success(decodedData)
         }
     }
 }

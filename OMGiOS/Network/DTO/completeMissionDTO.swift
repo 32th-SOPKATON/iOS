@@ -9,4 +9,10 @@ struct completeMissionDTO: Codable {
     let code: Int?
     let success: Bool?
     let message: String?
+    let data: [completeMissionData]?
+}
+
+struct completeMissionData: Codable {
+    let missionId: Int?
+    let missoionTitle: String?
 }
