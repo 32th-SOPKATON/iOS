@@ -7,8 +7,18 @@
 
 import UIKit
 
-class MyCollectionViewCell: UICollectionViewCell {
+import SnapKit
 
+final class MyCollectionViewCell: UICollectionViewCell {
+    
+    private let tagView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .point
+        return view
+    }()
+    
+    private let missionLabel: 
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .blue
