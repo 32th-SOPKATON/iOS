@@ -86,6 +86,7 @@
 <br/>
 
 
+
 <h2> 📸팀원끼리 응원의 메시지를 담은 사진 촬영</h2>
-<img src="![Uploading SOPTKATON-iOS.jpeg…]()"  alt="솝커톤-응원사진" />
+<img src="https://github.com/32th-SOPKATON/iOS/assets/97212841/8f4c00ac-c926-42ce-aea9-a1e621bbf537)" alt="솝커톤-응원사진" />
 
