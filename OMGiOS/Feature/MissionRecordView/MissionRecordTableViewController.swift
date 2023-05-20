@@ -20,4 +20,28 @@ class MissionRecordTableViewController: UITableViewController {
         let label = UILabel()
         return label
     }()
+    
+    private let missionRecordTableView: UITableView = {
+        let tableview = UITableView()
+        tableview.register(MissionRecordTableViewCell.self, forCellReuseIdentifier: MissionRecordTableViewCell.identifier)
+        return tableview
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setStyle()
+        setLayout()
+    }
+    
+}
+
+private extension MissionRecordTableViewController {
+    
+    func setStyle() {
+        
+    }
+    func setLayout() {
+        view.adds([missionRecordTitleLabel, todayMissionLabel, missionRecordTableView])
+        
+    }
 }
