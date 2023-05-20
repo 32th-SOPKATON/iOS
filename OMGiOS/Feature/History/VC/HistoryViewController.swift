@@ -9,6 +9,8 @@ import SnapKit
 
 class HistoryViewController: UIViewController {
     
+    private let dummy = MissionRecord.dummy()
+    
     private let titleView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -36,7 +38,16 @@ class HistoryViewController: UIViewController {
     private let labelView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
+        view.layer.borderColor = UIColor.g_300.withAlphaComponent(0.5).cgColor
         return view
+    }()
+    
+    private let todayMessageLabel: UILabel = {
+        let label = UILabel()
+        label.text = "두근두근 다음 미션은?"
+        label.font = UIFont.body1Medium()
+        label.textColor = .g_600
+        return label
     }()
     
     private let missionRecordTableView: UITableView = {
@@ -69,6 +80,7 @@ private extension HistoryViewController {
     func setLayout() {
         view.adds([titleView, todayMissionLabel, missionRecordTableView, labelView])
         titleView.addSubview(missionRecordTitleLabel)
+        labelView.addSubview(todayMessageLabel)
         
         titleView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
@@ -92,6 +104,11 @@ private extension HistoryViewController {
             $0.top.equalTo(todayMissionLabel.snp.bottom)
         }
         
+        todayMessageLabel.snp.makeConstraints{
+            $0.leading.equalToSuperview().inset(37)
+            $0.centerY.equalToSuperview()
+        }
+        
         missionRecordTableView.snp.makeConstraints {
             $0.top.equalTo(labelView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
@@ -102,11 +119,14 @@ private extension HistoryViewController {
 
 extension HistoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return dummy.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoryTableViewCell.identifier, for: indexPath) as? HistoryTableViewCell else { return UITableViewCell() }
+        
+        cell.configureCell(dummy[indexPath.row])
                 
         return cell
     }

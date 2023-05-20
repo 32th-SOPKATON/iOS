@@ -63,7 +63,7 @@ class HistoryTableViewCell: UITableViewCell {
     }
 }
 
-private extension HistoryTableViewCell {
+extension HistoryTableViewCell {
     
     
     
@@ -104,11 +104,11 @@ private extension HistoryTableViewCell {
             $0.width.height.equalTo(44)
         }
     }
-    /*
+    
      func configureCell(_ history: MissionRecord) {
      recordDateLabel.text = history.recordDate
      missionRecordLabel.text = history.missionHistory
      missionResultImageView.image = history.image
      }
-     */
+    
 }
