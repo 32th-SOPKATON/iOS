@@ -34,6 +34,8 @@ class CustomTabBarController: UITabBarController {
     
     private func setStyle() {
         self.tabBar.backgroundColor = .black
+        self.tabBar.tintColor = .main1
+        self.tabBar.unselectedItemTintColor = .g_700
     }
     
     private func setViewController() {
@@ -42,7 +44,7 @@ class CustomTabBarController: UITabBarController {
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         homeNavigationController.setNavigationBarHidden(true, animated: true)
 
-        let todayMissionViewController = TodayMissionViewController()
+        let todayMissionViewController = MyViewController()
         todayMissionViewController.tabBarItem = UITabBarItem(title: "오늘 미션", image: UIImage(systemName: "star.fill"), tag: 0)
         let todayMissionNavigationController = UINavigationController(rootViewController: todayMissionViewController)
 
@@ -52,8 +54,8 @@ class CustomTabBarController: UITabBarController {
         let historyNavigationController = UINavigationController(rootViewController: historyViewController)
 
 
-        viewControllers = [homeNavigationController,
-                           todayMissionNavigationController,
+        viewControllers = [todayMissionNavigationController,
+                           homeNavigationController,
                            historyNavigationController]
     }
     
