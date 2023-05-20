@@ -13,6 +13,9 @@
 		6B80EC712A19169D002D7235 /* TodayMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC702A19169D002D7235 /* TodayMissionViewController.swift */; };
 		8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */; };
 		8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */; };
+		8D746E102A191DA2007CFC1C /* missionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0F2A191DA2007CFC1C /* missionRecordViewController.swift */; };
+		8D746E122A191E0F007CFC1C /* missionRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E112A191E0F007CFC1C /* missionRecordTableViewCell.swift */; };
+		8DB800F12A191F9F00CA76DD /* missionRecordUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB800F02A191F9F00CA76DD /* missionRecordUIView.swift */; };
 		9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197092A189D2A00D423D7 /* AppDelegate.swift */; };
 		9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970B2A189D2A00D423D7 /* SceneDelegate.swift */; };
 		9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970D2A189D2A00D423D7 /* ViewController.swift */; };
@@ -47,6 +50,9 @@
 		8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionCardsDTO.swift; sourceTree = "<group>"; };
 		8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionDetailDTO.swift; sourceTree = "<group>"; };
 		8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordDTO.swift; sourceTree = "<group>"; };
+		8D746E0F2A191DA2007CFC1C /* missionRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordViewController.swift; sourceTree = "<group>"; };
+		8D746E112A191E0F007CFC1C /* missionRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordTableViewCell.swift; sourceTree = "<group>"; };
+		8DB800F02A191F9F00CA76DD /* missionRecordUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordUIView.swift; sourceTree = "<group>"; };
 		913197062A189D2A00D423D7 /* OMGiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMGiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913197092A189D2A00D423D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9131970B2A189D2A00D423D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D746E0E2A191CB4007CFC1C /* MissionRecord */ = {
+			isa = PBXGroup;
+			children = (
+				8D746E0F2A191DA2007CFC1C /* missionRecordViewController.swift */,
+				8D746E112A191E0F007CFC1C /* missionRecordTableViewCell.swift */,
+				8DB800F02A191F9F00CA76DD /* missionRecordUIView.swift */,
+			);
+			path = MissionRecord;
 		6B80EC632A190886002D7235 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +242,7 @@
 		913197312A189E4F00D423D7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				8D746E0E2A191CB4007CFC1C /* MissionRecord */,
 				913197582A191DFF00D423D7 /* MissionDetailView */,
 				6B80EC682A191636002D7235 /* History */,
 				6B80EC672A19161C002D7235 /* Home */,
@@ -400,7 +415,9 @@
 				9131972B2A189E0900D423D7 /* UIColor.swift in Sources */,
 				9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */,
 				913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */,
+				8D746E122A191E0F007CFC1C /* missionRecordTableViewCell.swift in Sources */,
 				913197452A189FA900D423D7 /* URLConstants.swift in Sources */,
+				8DB800F12A191F9F00CA76DD /* missionRecordUIView.swift in Sources */,
 				913197412A189F9000D423D7 /* NetworkResult.swift in Sources */,
 				913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */,
 				913197272A189DED00D423D7 /* UIView+Extension.swift in Sources */,
@@ -419,6 +436,7 @@
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
 				913197572A191DC200D423D7 /* BaseView.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
+				8D746E102A191DA2007CFC1C /* missionRecordViewController.swift in Sources */,
 				9131975A2A191EE600D423D7 /* RateView.swift in Sources */,
 				8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */,
 			);
