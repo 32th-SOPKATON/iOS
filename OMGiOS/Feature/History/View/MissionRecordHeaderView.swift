@@ -11,7 +11,8 @@ class MissionRecordHeaderView: UIView {
     
     private let headerLabel: UILabel = {
         let label = UILabel()
-        label.text = "지난 미션"
+        label.text = "      지난 미션"
+        label.font = UIFont.headLine()
         return label
     }()
     
@@ -29,7 +30,8 @@ class MissionRecordHeaderView: UIView {
         self.addSubview(headerLabel)
         
         headerLabel.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.top.equalToSuperview().inset(37)
+            $0.leading.equalToSuperview()
         }
     }
     
