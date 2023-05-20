@@ -8,6 +8,9 @@
 import UIKit
 
 enum ImageLiterals {
+    
+    static var mom: UIImage { .load(name: "mom") }
+    static var papa: UIImage { .load(name: "papa") }
 }
 
 extension UIImage {
