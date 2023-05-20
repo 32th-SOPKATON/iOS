@@ -47,7 +47,7 @@ class CustomTabBarController: UITabBarController {
         let todayMissionNavigationController = UINavigationController(rootViewController: todayMissionViewController)
 
 
-        let historyViewController = TodayMissionViewController()
+        let historyViewController = HistoryViewController()
         historyViewController.tabBarItem = UITabBarItem(title: "지난 기록", image: UIImage(systemName: "star.fill"), tag: 0)
         let historyNavigationController = UINavigationController(rootViewController: historyViewController)
 
