@@ -78,7 +78,8 @@ final class HomeViewController: UIViewController {
         grapImage.snp.makeConstraints {
             $0.width.equalTo(284)
             $0.height.equalTo(443)
-            $0.center.equalToSuperview()
+            $0.top.equalToSuperview().inset(188)
+            $0.centerX.equalToSuperview()
         }
     }
 }
