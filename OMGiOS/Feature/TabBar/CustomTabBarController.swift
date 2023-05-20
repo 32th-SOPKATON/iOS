@@ -34,6 +34,8 @@ class CustomTabBarController: UITabBarController {
     
     private func setStyle() {
         self.tabBar.backgroundColor = .black
+        self.tabBar.tintColor = .main1
+        self.tabBar.unselectedItemTintColor = .g_700
     }
     
     private func setViewController() {
@@ -52,8 +54,8 @@ class CustomTabBarController: UITabBarController {
         let historyNavigationController = UINavigationController(rootViewController: historyViewController)
 
 
-        viewControllers = [homeNavigationController,
-                           todayMissionNavigationController,
+        viewControllers = [todayMissionNavigationController,
+                           homeNavigationController,
                            historyNavigationController]
     }
     
