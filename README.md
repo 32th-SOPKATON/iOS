@@ -1,70 +1,70 @@
 <div align="center">
 
-<h2> (서비스소개,한줄) </h2>
+<h2> 싱글벙글 </h2>
 
-<img src=""  alt="서비스대표-이미지" />
+<img width="173" alt="Screenshot 2023-05-21 at 7 46 49 AM" src="https://github.com/32th-SOPKATON/iOS/assets/97212841/3f77af6d-b41f-4175-b731-c89c0ef183b4">
 
 </div>
 
-<h2> (개발자들) </h2>
+<h2> 아요 12조 </h2>
 
 <table align="center">
     <tr align="center">
         <td style="min-width: 150px;">
             <a href="">
-              <img src="" width="200" alt="깃허브계정-프로필사진">
+              <img src="" width="200" alt="https://github.com/32th-SOPKATON/iOS/assets/97212841/9bb1bea9-e302-4cca-8876-1e3a5d523671">
               <br />
-              <b>(깃허브계정명)</b>
+              <b> joonBaek12 </b>
             </a>
         </td>
       <td style="min-width: 150px;">
             <a href="">
               <img src="" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>hongjunehuke</b>
             </a>
         </td>
       <td style="min-width: 150px;">
             <a href="">
               <img src="" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>yeahh315</b>
             </a>
         </td>
       <td style="min-width: 150px;">
             <a href="">
               <img src="" width="200" alt="깃허브계정-프로필사진">
               <br />
-              <b>(깃허브계정명)</b>
+              <b>hyj422</b>
             </a>
         </td>
     </tr>
     <tr align="center">
         <td>
-            (이름) <br/>
+            백준 <br/>
       </td>
        <td>
-            (이름) <br/>
+            홍준혁 <br/>
       </td>
        <td>
-            (이름) <br/>
+            김다예 <br/>
       </td>
        <td>
-            (이름) <br/>
+            홍유정 <br/>
       </td>
     </tr>
     <tr align="center">
         <td>
-            (역할) <br/>
+            미션카드 선택 <br/>
       </td>
        <td>
-            (역할) <br/>
+            정보입력, 포도1 <br/>
       </td>
        <td>
-            (역할) <br/>
+            미션카드 수행 <br/>
       </td>
        <td>
-            (역할) <br/>
+            지난기록 <br/>
       </td>
     </tr>
 </table>
