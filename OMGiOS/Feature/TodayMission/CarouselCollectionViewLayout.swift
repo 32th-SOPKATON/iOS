@@ -7,12 +7,12 @@
 
 import UIKit
 
-class CarouselCollectionViewLayout1: UICollectionViewFlowLayout {
+class CarouselCollectionViewLayout: UICollectionViewFlowLayout {
     
     override init() {
         super.init()
-        minimumLineSpacing = 20
-        sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        minimumLineSpacing = 35
+        sectionInset = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 50)
     }
 
     required init?(coder aDecoder: NSCoder) {

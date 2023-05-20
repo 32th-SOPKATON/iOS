@@ -19,7 +19,7 @@ enum ImageLiterals {
     static var great: UIImage { .load(name: "greatIcon") }
     static var heartFill: UIImage { .load(name: "heart.fill") }
     static var heartNotFill: UIImage { .load(name: "heart") }
-    static var howTo: UIImage { .load(name: "HowTo") }
+    static var howTo: UIImage { .load(name: "HowTO") }
     static var mission: UIImage { .load(name: "mission") }
     static var putch: UIImage { .load(name: "putchIcon") }
 }
