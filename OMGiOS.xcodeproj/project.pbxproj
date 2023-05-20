@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */; };
 		8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */; };
-		8D746E0D2A19149F007CFC1C /* missionRecordDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */; };
 		9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197092A189D2A00D423D7 /* AppDelegate.swift */; };
 		9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970B2A189D2A00D423D7 /* SceneDelegate.swift */; };
 		9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131970D2A189D2A00D423D7 /* ViewController.swift */; };
@@ -29,6 +28,7 @@
 		913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131974F2A1906D000D423D7 /* ServiceAPI.swift */; };
 		913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197512A1906F000D423D7 /* ServiceProtocol.swift */; };
 		913197542A19129B00D423D7 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197532A19129B00D423D7 /* ResponseData.swift */; };
+		913197572A191DC200D423D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197562A191DC200D423D7 /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +54,7 @@
 		9131974F2A1906D000D423D7 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		913197512A1906F000D423D7 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		913197532A19129B00D423D7 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		913197562A191DC200D423D7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		913197242A189DCF00D423D7 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				913197552A191DB200D423D7 /* Base */,
 				9131972C2A189E1300D423D7 /* Literal */,
 				913197252A189DDD00D423D7 /* Extension */,
 			);
@@ -217,6 +219,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		913197552A191DB200D423D7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				913197562A191DC200D423D7 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,6 +320,7 @@
 				8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
+				913197572A191DC200D423D7 /* BaseView.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
 				8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */,
 			);
