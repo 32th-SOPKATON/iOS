@@ -29,6 +29,10 @@
 		913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197512A1906F000D423D7 /* ServiceProtocol.swift */; };
 		913197542A19129B00D423D7 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197532A19129B00D423D7 /* ResponseData.swift */; };
 		913197572A191DC200D423D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197562A191DC200D423D7 /* BaseView.swift */; };
+		9131975A2A191EE600D423D7 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197592A191EE600D423D7 /* RateView.swift */; };
+		9131975C2A19208E00D423D7 /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */; };
+		9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */; };
+		913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975F2A1927F400D423D7 /* MissionDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		913197512A1906F000D423D7 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		913197532A19129B00D423D7 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
 		913197562A191DC200D423D7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		913197592A191EE600D423D7 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailTextView.swift; sourceTree = "<group>"; };
+		9131975F2A1927F400D423D7 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 		913197312A189E4F00D423D7 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				913197582A191DFF00D423D7 /* MissionDetailView */,
 				9131970D2A189D2A00D423D7 /* ViewController.swift */,
 			);
 			path = Feature;
@@ -225,6 +234,17 @@
 				913197562A191DC200D423D7 /* BaseView.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		913197582A191DFF00D423D7 /* MissionDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				9131975F2A1927F400D423D7 /* MissionDetailView.swift */,
+				913197592A191EE600D423D7 /* RateView.swift */,
+				9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */,
+				9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */,
+			);
+			path = MissionDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9131975C2A19208E00D423D7 /* MissionDetailViewController.swift in Sources */,
 				9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */,
 				9131972B2A189E0900D423D7 /* UIColor.swift in Sources */,
 				9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */,
@@ -316,12 +337,15 @@
 				913197542A19129B00D423D7 /* ResponseData.swift in Sources */,
 				913197362A189F3B00D423D7 /* dummyDTO.swift in Sources */,
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
+				913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */,
+				9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */,
 				913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */,
 				8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
 				913197572A191DC200D423D7 /* BaseView.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
+				9131975A2A191EE600D423D7 /* RateView.swift in Sources */,
 				8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
