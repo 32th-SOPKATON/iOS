@@ -11,6 +11,17 @@ enum ImageLiterals {
     
     static var mom: UIImage { .load(name: "mom") }
     static var papa: UIImage { .load(name: "papa") }
+    static var grap: UIImage { .load(name: "grap") }
+    static var tab: UIImage { .load(name: "tab") }
+    
+    
+    static var clap: UIImage { .load(name: "clapIcon") }
+    static var great: UIImage { .load(name: "greatIcon") }
+    static var heartFill: UIImage { .load(name: "heart.fill") }
+    static var heartNotFill: UIImage { .load(name: "heart") }
+    static var howTo: UIImage { .load(name: "HowTo") }
+    static var mission: UIImage { .load(name: "mission") }
+    static var putch: UIImage { .load(name: "putchIcon") }
 }
 
 extension UIImage {
