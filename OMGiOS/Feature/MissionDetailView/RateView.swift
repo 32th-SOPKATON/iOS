@@ -18,17 +18,17 @@ final class RateView: BaseView {
     lazy var stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .horizontal
-        view.spacing = 30
+        view.spacing = 20
         view.backgroundColor = .white
         return view
     }()
     
     lazy var starFillImage: UIImage? = {
-        return UIImage(systemName: "star.fill")
+        return UIImage(systemName: "heart.fill")
     }()
 
     lazy var starEmptyImage: UIImage? = {
-        return UIImage(systemName: "star")
+        return UIImage(systemName: "heart")
     }()
     
     override func configure() {
