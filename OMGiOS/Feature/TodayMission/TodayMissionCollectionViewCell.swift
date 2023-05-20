@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeCollectionViewCell: UICollectionViewCell {
+class MyCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,4 +24,3 @@ final class HomeCollectionViewCell: UICollectionViewCell {
     }
 
 }
-
