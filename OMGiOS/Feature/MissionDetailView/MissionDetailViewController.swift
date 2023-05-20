@@ -20,7 +20,7 @@ final class MissionDetailViewController: UIViewController {
     }
     
     private func config() {
-        view.backgroundColor = .white
+        view.backgroundColor = .g_100
     }
     
     private func render() {
