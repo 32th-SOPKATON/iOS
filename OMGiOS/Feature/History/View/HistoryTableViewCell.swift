@@ -100,7 +100,7 @@ private extension HistoryTableViewCell {
         missionResultImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             //$0.leading.equalTo(missionRecordLabel.snp.trailing)
-            $0.trailing.equalToSuperview()
+            $0.trailing.equalToSuperview().inset(16)
             $0.width.height.equalTo(44)
         }
     }

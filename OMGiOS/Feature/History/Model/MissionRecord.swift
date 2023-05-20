@@ -12,3 +12,13 @@ struct MissionRecord {
     let missionHistory: String
     let recordDate: String
 }
+/*
+extension MissionRecord {
+    
+    static func dummy() -> [MissionRecord] {
+        return [MissionRecord(image: .hypeBoy,
+                       missionHistory: <#T##String#>,
+                       recordDate: <#T##String#>),
+    }
+}
+*/
