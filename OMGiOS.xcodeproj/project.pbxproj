@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B80EC652A1908E3002D7235 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC642A1908E3002D7235 /* CustomTabBarController.swift */; };
+		6B80EC6A2A19166D002D7235 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC692A19166D002D7235 /* HistoryViewController.swift */; };
+		6B80EC6F2A191690002D7235 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC6E2A191690002D7235 /* HomeViewController.swift */; };
+		6B80EC712A19169D002D7235 /* TodayMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80EC702A19169D002D7235 /* TodayMissionViewController.swift */; };
 		8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */; };
 		8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */; };
 		8D746E102A191DA2007CFC1C /* missionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D746E0F2A191DA2007CFC1C /* missionRecordViewController.swift */; };
@@ -31,9 +35,18 @@
 		913197502A1906D000D423D7 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131974F2A1906D000D423D7 /* ServiceAPI.swift */; };
 		913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197512A1906F000D423D7 /* ServiceProtocol.swift */; };
 		913197542A19129B00D423D7 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197532A19129B00D423D7 /* ResponseData.swift */; };
+		913197572A191DC200D423D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197562A191DC200D423D7 /* BaseView.swift */; };
+		9131975A2A191EE600D423D7 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913197592A191EE600D423D7 /* RateView.swift */; };
+		9131975C2A19208E00D423D7 /* MissionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */; };
+		9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */; };
+		913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9131975F2A1927F400D423D7 /* MissionDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B80EC642A1908E3002D7235 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		6B80EC692A19166D002D7235 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		6B80EC6E2A191690002D7235 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6B80EC702A19169D002D7235 /* TodayMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMissionViewController.swift; sourceTree = "<group>"; };
 		8D746E082A1911EE007CFC1C /* missionCardsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionCardsDTO.swift; sourceTree = "<group>"; };
 		8D746E0A2A19139B007CFC1C /* missionDetailDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionDetailDTO.swift; sourceTree = "<group>"; };
 		8D746E0C2A19149F007CFC1C /* missionRecordDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = missionRecordDTO.swift; sourceTree = "<group>"; };
@@ -59,6 +72,11 @@
 		9131974F2A1906D000D423D7 /* ServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
 		913197512A1906F000D423D7 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		913197532A19129B00D423D7 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		913197562A191DC200D423D7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		913197592A191EE600D423D7 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailViewController.swift; sourceTree = "<group>"; };
+		9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailTextView.swift; sourceTree = "<group>"; };
+		9131975F2A1927F400D423D7 /* MissionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,60 @@
 				8DB800F02A191F9F00CA76DD /* missionRecordUIView.swift */,
 			);
 			path = MissionRecord;
+		6B80EC632A190886002D7235 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC642A1908E3002D7235 /* CustomTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6B80EC662A1915D5002D7235 /* TodayMission */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC6D2A191680002D7235 /* VC */,
+			);
+			path = TodayMission;
+			sourceTree = "<group>";
+		};
+		6B80EC672A19161C002D7235 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC6C2A19167C002D7235 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6B80EC682A191636002D7235 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC6B2A191671002D7235 /* VC */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		6B80EC6B2A191671002D7235 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC692A19166D002D7235 /* HistoryViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6B80EC6C2A19167C002D7235 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC6E2A191690002D7235 /* HomeViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6B80EC6D2A191680002D7235 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6B80EC702A19169D002D7235 /* TodayMissionViewController.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		913196FD2A189D2A00D423D7 = {
@@ -124,6 +196,7 @@
 		913197242A189DCF00D423D7 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				913197552A191DB200D423D7 /* Base */,
 				9131972C2A189E1300D423D7 /* Literal */,
 				913197252A189DDD00D423D7 /* Extension */,
 			);
@@ -170,6 +243,11 @@
 			isa = PBXGroup;
 			children = (
 				8D746E0E2A191CB4007CFC1C /* MissionRecord */,
+				913197582A191DFF00D423D7 /* MissionDetailView */,
+				6B80EC682A191636002D7235 /* History */,
+				6B80EC672A19161C002D7235 /* Home */,
+				6B80EC662A1915D5002D7235 /* TodayMission */,
+				6B80EC632A190886002D7235 /* TabBar */,
 				9131970D2A189D2A00D423D7 /* ViewController.swift */,
 			);
 			path = Feature;
@@ -231,6 +309,25 @@
 				913197532A19129B00D423D7 /* ResponseData.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		913197552A191DB200D423D7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				913197562A191DC200D423D7 /* BaseView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		913197582A191DFF00D423D7 /* MissionDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				9131975F2A1927F400D423D7 /* MissionDetailView.swift */,
+				913197592A191EE600D423D7 /* RateView.swift */,
+				9131975D2A19244F00D423D7 /* MissionDetailTextView.swift */,
+				9131975B2A19208E00D423D7 /* MissionDetailViewController.swift */,
+			);
+			path = MissionDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9131975C2A19208E00D423D7 /* MissionDetailViewController.swift in Sources */,
 				9131970E2A189D2A00D423D7 /* ViewController.swift in Sources */,
+				913197482A189FDD00D423D7 /* dummy.swift in Sources */,
+				6B80EC6F2A191690002D7235 /* HomeViewController.swift in Sources */,
 				9131972B2A189E0900D423D7 /* UIColor.swift in Sources */,
 				9131970A2A189D2A00D423D7 /* AppDelegate.swift in Sources */,
 				913197522A1906F000D423D7 /* ServiceProtocol.swift in Sources */,
@@ -324,12 +424,20 @@
 				913197542A19129B00D423D7 /* ResponseData.swift in Sources */,
 				913197362A189F3B00D423D7 /* dummyDTO.swift in Sources */,
 				9131973F2A189F8100D423D7 /* BaseURLConstant.swift in Sources */,
+				913197602A1927F400D423D7 /* MissionDetailView.swift in Sources */,
+				9131975E2A19244F00D423D7 /* MissionDetailTextView.swift in Sources */,
+				9131974B2A189FEE00D423D7 /* dummyRe.swift in Sources */,
+				6B80EC652A1908E3002D7235 /* CustomTabBarController.swift in Sources */,
+				6B80EC712A19169D002D7235 /* TodayMissionViewController.swift in Sources */,
 				913197292A189DFD00D423D7 /* UIStackView+Extension.swift in Sources */,
 				8D746E0B2A19139B007CFC1C /* missionDetailDTO.swift in Sources */,
 				9131972E2A189E1E00D423D7 /* ImageLiterals.swift in Sources */,
+				6B80EC6A2A19166D002D7235 /* HistoryViewController.swift in Sources */,
 				913197432A189F9D00D423D7 /* NetworkService.swift in Sources */,
+				913197572A191DC200D423D7 /* BaseView.swift in Sources */,
 				9131970C2A189D2A00D423D7 /* SceneDelegate.swift in Sources */,
 				8D746E102A191DA2007CFC1C /* missionRecordViewController.swift in Sources */,
+				9131975A2A191EE600D423D7 /* RateView.swift in Sources */,
 				8D746E092A1911EE007CFC1C /* missionCardsDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
