@@ -33,7 +33,7 @@ class CustomTabBarController: UITabBarController {
     // MARK: - Setting
     
     private func setStyle() {
-        self.tabBar.backgroundColor = .black
+        self.tabBar.backgroundColor = .white
     }
     
     private func setViewController() {
