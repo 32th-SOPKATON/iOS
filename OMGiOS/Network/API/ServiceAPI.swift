@@ -11,13 +11,15 @@ import Alamofire
 
 final class ServiceAPI: ServiceProtocol {
     
+    static var serviceAPI = ServiceAPI()
+    
     func getCompleteMissionCountAPI(
         completion: @escaping (NetworkResult<Any>) -> Void
     ) {
         let url = BaseURLConstant.base + "/mission/ing"
         let header: HTTPHeaders = [
             "Content-Type" : "application/json",
-            "Authorization" : "1"
+            "userId" : "1"
         ]
 
         let dataRequest = AF.request(url,
@@ -44,7 +46,7 @@ final class ServiceAPI: ServiceProtocol {
         let url = BaseURLConstant.base + "/mission"
         let header: HTTPHeaders = [
             "Content-Type" : "application/json",
-            "Authorization" : "1"
+            "userId" : "1"
         ]
 
         let dataRequest = AF.request(url,
@@ -187,7 +189,6 @@ final class ServiceAPI: ServiceProtocol {
         by statusCode: Int, _ data: Data,
         responseData: ResponseData
     ) -> NetworkResult<Any> {
-        let decoder = JSONDecoder()
         print("statusCode: ", statusCode)
         switch statusCode {
         case 200..<300:
